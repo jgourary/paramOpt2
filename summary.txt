@@ -1,0 +1,12 @@
+# polar-eps 0.0001
+original parameter: -5.3766
+directly run bar:   -5.3578 
+run from scratch:   -5.1378
+one-step perturb:   -5.2963 
+
+# polar-eps 0.00001
+original parameter:-5.3680 
+directly run bar:  -5.3481 
+run from scratch:  -5.2487 
+one-step perturb_1:  -5.2913: rerun the end states 
+one-step perturb_2:  -5.2915: reuse the existing trajectory (1.0,1.0)
