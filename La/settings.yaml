@@ -12,52 +12,30 @@ checking_time: 60.0              # Time interval (in second) used by autoBAR.py 
 copy_arc_for_perturb: YES       # Only used if a "xxx.prm_" file exists. YES/True: copy the existing ".arc" file
 
 # Files you should provide 
-gas_xyz: Aceticacid.xyz             # Ligand/small molecule tinker xyz file
-box_xyz: Aceticacid_solv.xyz        # Simulation box tinker xyz file, with box information
-parameters: amoeba09.prm        # Tinker parameter file
+gas_xyz: la.xyz            # Ligand/small molecule tinker xyz file
+box_xyz: la_water50.xyz         # Simulation box tinker xyz file, with box information
+parameters: amoeba09_la.prm        # Tinker parameter file
 
 # Molecular dynamics simulation settings
 liquid_md_total_time: 1.25            # Simulation time for liquid (in ns)
 liquid_md_time_step: 2.0             # Integration time step (in fs)
 liquid_md_write_freq: 2.0            # Write out frequency (in ps)
 liquid_md_ensemble: NPT              # Liquid MD ensemble (NPT or NVT)
-liquid_md_temperature: 300.0         # Liquid MD temperature (in Kelvin)
+liquid_md_temperature: 298.15        # Liquid MD temperature (in Kelvin)
 liquid_md_pressure: 1.0              # Liquid MD temperature (in atm.)
 
 gas_md_total_time: 1.25            # Simulation time for gas (in ns)
 gas_md_time_step:  0.1            # Integration time step (in fs)
 gas_md_write_freq: 2.0            # Write out frequency (in ps)
-gas_md_temperature: 300.0         # Gas MD temperature (in Kelvin)
+gas_md_temperature: 298.15         # Gas MD temperature (in Kelvin)
 
 # AMOEBA Force Field related settings
 polar_eps: 0.00001         # polar_eps for dipole convergence 
 
 # Jobs will run on these nodes
 node_list:
-  - node42
-  - node45
-  - node46
-  - node47
-  - node50
-  - node51
-  - node54
-  - node81
-  - node56
-  - node57
-  - node61
-  - node62
-  - node63
-  - node64
-  - node76
-  - node77
-  - node78
-  - node194
-  - node80
-  - node82
-  - node84
-  - node85
-  - node95
-  - node96
-  - node97
-  - node98
-  - node99
+  - node58
+  - node60
+  - node70
+  - node94
+  - node102

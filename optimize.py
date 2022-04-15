@@ -1,5 +1,6 @@
 from scipy.optimize import least_squares
 from single_point import *
+from subMM import *
 
 
 def func(math_params):
@@ -7,8 +8,23 @@ def func(math_params):
     with open("parameter", "w") as f:
         for k, p in zip(types, phys_params):
             f.write(f"{k:10s}{p:15.10f}\n")
+
+    #  Cost from hydration free energy from BAR vs experimental HFE
     calc_hfes = np.array(getHFE())
-    return hfes - calc_hfes
+    hfeCost = hfes - calc_hfes
+    print("hfe cost = " + str(hfeCost))
+
+    #  Cost from QM vs MM interaction energy curves
+    QM = np.loadtxt('QM-energy.dat', usecols=(-1,), unpack=True)
+    MM = getEnergy('filelist', True)
+    IEcost = 0
+    i = 0
+    while i < len(QM):
+        IEcost += ((QM[i] - MM[i]) ** 2)
+    print("Interaction energy cost = " + str(IEcost))
+    totalCost = hfeCost + IEcost
+    print("Total cost = " + str(totalCost))
+    return totalCost
 
 
 def main():

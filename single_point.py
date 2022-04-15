@@ -11,11 +11,12 @@ def writeprm():
     lines = open("amoeba09_template.prm").readlines()
     with open("amoeba09.prm_", "w") as f:
         for line in lines:
-            if "vdw " in line:
-                d = line.split()
-                if d[1] == '36':
-                    line = '  '.join(
-                        [d[0], d[1], "%15.8f" % float(prmdict[d[2]]), "%15.8f" % float(prmdict[d[3]]), "\n"])
+            if "PRM_" in line:
+                for k, v in prmdict:
+                    search = "PRM_" + k + "_"
+                    if search in line and (line[0:1] != "#"):
+                        replaceStr = "%10.8f" % (float(v))
+                        line = line.replace(search, replaceStr)
             f.write(line)
     return
 
@@ -30,7 +31,7 @@ def submit(dirname):
 
 
 def getHFE():
-    homedir = "/home/liuchw/autoBAR-demo"
+    homedir = "/home/jtg2769/lanthanides/paramOpt2"
     dirnames = list(np.loadtxt("hfe_expt.txt", usecols=(0,), dtype="str", unpack=True))
     for dirname in dirnames:
         os.system(
