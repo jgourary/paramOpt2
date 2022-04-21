@@ -30,9 +30,17 @@ def submit(dirname):
     return
 
 
+def getFirstElementOfFileAsList(filename):
+    with open(filename) as f:
+        first_line = f.readline()
+        first_element = first_line.split()[0]
+    return [first_element]
+
+
 def getHFE():
     homedir = "/home/jtg2769/lanthanides/paramOpt2"
-    dirnames = list(np.loadtxt("hfe_expt.txt", usecols=(0,), dtype="str", unpack=True))
+    #  dirnames = list(np.loadtxt("hfe_expt.txt", usecols=(0,), dtype="str", unpack=True))
+    dirnames = getFirstElementOfFileAsList("hfe_expt.txt")
     for dirname in dirnames:
         os.system(
             f"rm -f {homedir}/amoeba09.prm_ {homedir}/{dirname}/amoeba09.prm_ {homedir}/{dirname}/result.txt; wait")
