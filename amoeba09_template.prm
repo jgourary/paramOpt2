@@ -3445,5 +3445,5 @@ multipole    500   0    0               3.00000
                                         0.00000    0.00000
                                         0.00000    0.00000    0.00000
 
-polarize     500          PRM_POLAR_       PRM_DAMP_
+polarize     500          1.62682349       0.39
 vdw          500          PRM_VDW1_  PRM_VDW2_
