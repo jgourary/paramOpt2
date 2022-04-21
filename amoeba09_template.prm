@@ -60,9 +60,8 @@ mutual-14-scale         1.0
       #############################
 
 
-P. Ren, C. Wu and J. W. Ponder, "Polarizable Atomic Multipole-based
-Molecular Mechanics for Organic Molecules", J. Chem. Theory Comput.,
-7, 3143-3161 (2011)
+P. Ren and J. W. Ponder, "Polarizable Atomic Multipole Intermolecular
+Potentials for Small Organic Molecules", in preparation.
 
 J. W. Ponder and D. A. Case, "Force Fields for Protein Simulation",
 Adv. Prot. Chem., 66, 27-85 (2003)
@@ -96,9 +95,9 @@ atom          7    7    Na+   "Sodium Ion Na+"              11    22.990    0
 atom          8    8    K+    "Potassium Ion K+"            19    39.098    0
 atom          9    9    Rb+   "Rubidium Ion Rb+"            37    85.468    0
 atom         10   10    Cs+   "Cesium Ion Cs+"              55   132.905    0
-atom         11   11    Mg2   "Magnesium Ion Mg+2"          12    24.305    0
-atom         12   12    Ca2   "Calcium Ion Ca+2"            20    40.078    0
-atom         13   13    Zn2   "Zinc Ion Zn+2"               30    65.390    0
+atom         11   11    Mg+   "Magnesium Ion Mg+2"          12    24.305    0
+atom         12   12    Ca+   "Calcium Ion Ca+2"            20    40.078    0
+atom         13   13    Zn+   "Zinc Ion Zn+2"               30    65.390    0
 atom         14   14    F-    "Fluoride Ion F-"              9    18.998    0
 atom         15   15    Cl-   "Chloride Ion Cl-"            17    35.453    0
 atom         16   16    Br-   "Bromide Ion Br-"             35    79.904    0
@@ -480,7 +479,7 @@ vdw          32               2.9400     0.0260      0.910
 vdw          33               3.6000     0.1040
 vdw          34               3.4050     0.1100
 vdw          35               2.6550     0.0135      0.910
-vdw          36               VDWS36     VDWT36 
+vdw          36               3.4050     0.1100
 vdw          37               2.6550     0.0135      0.910
 vdw          38               3.7600     0.1010
 vdw          39               2.8700     0.0240      0.910
@@ -3392,3 +3391,59 @@ polarize    347          0.4960     0.3900    343
 polarize    348          0.6960     0.3900    344
 polarize    349          0.6960     0.3900    345
 polarize    350          0.6960     0.3900    346
+
+# The following are derived parameters for Acetate and Sm2+
+# C. Liu
+# Mar.29
+
+# for Acetate
+
+vdw       401  3.8200   0.1010
+vdw       402  3.8200   0.1060
+vdw       403  3.4500   0.1120
+vdw       404  2.9800   0.0240 0.940
+atom          401    401    C     "037_AcOHMinus       "         6    12.011    4
+atom          402    402    C     "037_AcOHMinus       "         6    12.011    3
+atom          403    403    O     "037_AcOHMinus       "         8    15.999    1
+atom          404    404    H     "037_AcOHMinus       "         1     1.008    1
+polarize           401          1.4150     0.3900 404
+polarize           402          1.9700     0.3900 403
+polarize           403          1.9310     0.3900 402
+polarize           404          0.4800     0.3900 401
+# Multipoles from Electrostatic Potential Fitting
+#
+
+multipole   401  402  403              -0.26995
+                                        0.01740    0.00000   -0.07329
+                                        0.15030
+                                        0.00000    0.10254
+                                       -0.01089    0.00000   -0.25284
+multipole   402 -403 -403               0.99829
+                                        0.00000    0.00000    0.12597
+                                        0.34538
+                                        0.00000   -0.48867
+                                        0.00000    0.00000    0.14329
+multipole   403  402  403              -0.87683
+                                        0.13636    0.00000   -0.12681
+                                       -0.49313
+                                        0.00000    0.13693
+                                        0.14409    0.00000    0.35620
+multipole   404  401  402               0.00844
+                                        0.01769    0.00000   -0.04786
+                                        0.02997
+                                        0.00000    0.00606
+                                       -0.02846    0.00000   -0.03603
+
+
+# for La3+
+
+
+atom         500   500    La3+   "Lanthanum Ion La+3"          57    138.91    0
+multipole    500   0    0               3.00000
+                                        0.00000    0.00000    0.00000
+                                        0.00000
+                                        0.00000    0.00000
+                                        0.00000    0.00000    0.00000
+
+polarize     500          PRM_POLAR_       PRM_DAMP_
+vdw          500          PRM_VDW1_  PRM_VDW2_

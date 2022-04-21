@@ -1,6 +1,8 @@
 from scipy.optimize import least_squares
 from single_point import *
 from subMM import *
+import numpy as np
+import math
 
 
 def func(math_params):
@@ -21,8 +23,10 @@ def func(math_params):
     i = 0
     while i < len(QM):
         IEcost += ((QM[i] - MM[i]) ** 2)
+        i += 1
+    IEcost = math.sqrt(IEcost / len(MM))
     print("Interaction energy cost = " + str(IEcost))
-    totalCost = hfeCost + IEcost
+    totalCost = 0.75 * hfeCost + 0.25 * IEcost
     print("Total cost = " + str(totalCost))
     return totalCost
 

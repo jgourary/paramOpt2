@@ -8,7 +8,7 @@ import concurrent.futures
 def writeprm():
     types, params = np.loadtxt("parameter", dtype="str", unpack=True)
     prmdict = dict(zip(types, params))
-    lines = open("amoeba09_template.prm").readlines()
+    lines = open("amoeba09_template_unused.prm").readlines()
     with open("amoeba09.prm_", "w") as f:
         for line in lines:
             if "PRM_" in line:
