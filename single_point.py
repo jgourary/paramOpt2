@@ -38,7 +38,7 @@ def getFirstElementOfFileAsList(filename):
 
 
 def getHFE():
-    homedir = "/home/jtg2769/lanthanides/paramOpt2"
+    homedir = "/home/jtg2769/software/paramOpt2"
     #  dirnames = list(np.loadtxt("hfe_expt.txt", usecols=(0,), dtype="str", unpack=True))
     dirnames = getFirstElementOfFileAsList("hfe_expt.txt")
     for dirname in dirnames:
@@ -57,14 +57,22 @@ def getHFE():
     while True:
         hfes_calc = []
         for dirname in dirnames:
+
             resultfile = os.path.join(homedir, dirname, "result.txt")
+            print("looking for " + resultfile)
             if os.path.isfile(resultfile):
+                print("found " + resultfile)
                 lines = open(resultfile).readlines()
-                if len(lines) == 38:
-                    hfes_calc.append(float(lines[-1].split()[-2]))
+                for line in lines:
+                    if "SUMMARY OF THE TOTAL FREE ENERGY" in line:
+                        print(line)
+                        fields = line.split()
+                        hfes_calc.append(float(fields[6]))
         if len(hfes_calc) == len(dirnames):
             break
         else:
-            time.sleep(5)
+            print("Length of HFEs = " + str(len(hfes_calc)))
+            print("Length of dirs = " + str(len(dirnames)))
+            time.sleep(300)
     print("Current HFEs", hfes_calc)
     return hfes_calc

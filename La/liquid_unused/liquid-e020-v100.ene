@@ -1,0 +1,141 @@
+
+     ######################################################################    
+   ##########################################################################  
+  ###                                                                      ### 
+ ###            Tinker9  --  Software Tools for Molecular Design            ###
+ ##                                                                          ##
+ ##                      Version 1.0.0-rc  January 2021                      ##
+ ##                                                                          ##
+ ##                 Copyright (c)  Zhi Wang & the Ponder Lab                 ##
+ ###                           All Rights Reserved                          ###
+  ###                                                                      ### 
+   ##########################################################################  
+     ######################################################################    
+
+ Compiled at:  16:31:56  Sep 10 2021
+ Commit Date:  Mon Aug 16 01:28:23 2021 -0500
+ Commit:       b78a5351
+
+
+ Simulation Trajectory A and Thermodynamic State 0 :
+
+ 
+ Number of Frames :         500
+ Temperature :           298.15
+
+ Simulation Trajectory B and Thermodynamic State 1 :
+
+ 
+ Number of Frames :         500
+ Temperature :           298.15
+
+ Free Energy Difference via FEP Method :
+
+ Free Energy via Forward FEP             -69.2374 +/-   0.5889 Kcal/mol
+ Free Energy via Backward FEP            -84.8612 +/-   0.3872 Kcal/mol
+
+ Free Energy Difference via BAR Method :
+
+ BAR Iteration   0                       -84.7473 Kcal/mol
+ BAR Iteration   1                       -71.3895 Kcal/mol
+ BAR Iteration   2                       -81.7487 Kcal/mol
+ BAR Iteration   3                       -72.7969 Kcal/mol
+ BAR Iteration   4                       -81.0749 Kcal/mol
+ BAR Iteration   5                       -73.2821 Kcal/mol
+ BAR Iteration   6                       -80.7407 Kcal/mol
+ BAR Iteration   7                       -73.5612 Kcal/mol
+ BAR Iteration   8                       -80.5219 Kcal/mol
+ BAR Iteration   9                       -73.7548 Kcal/mol
+ BAR Iteration  10                       -80.3600 Kcal/mol
+ BAR Iteration  11                       -73.9023 Kcal/mol
+ BAR Iteration  12                       -80.2319 Kcal/mol
+ BAR Iteration  13                       -74.0212 Kcal/mol
+ BAR Iteration  14                       -80.1260 Kcal/mol
+ BAR Iteration  15                       -74.1208 Kcal/mol
+ BAR Iteration  16                       -80.0358 Kcal/mol
+ BAR Iteration  17                       -74.2063 Kcal/mol
+ BAR Iteration  18                       -79.9573 Kcal/mol
+ BAR Iteration  19                       -74.2812 Kcal/mol
+ BAR Iteration  20                       -79.8879 Kcal/mol
+ BAR Iteration  21                       -74.3479 Kcal/mol
+ BAR Iteration  22                       -79.8256 Kcal/mol
+ BAR Iteration  23                       -74.4079 Kcal/mol
+ BAR Iteration  24                       -79.7691 Kcal/mol
+ BAR Iteration  25                       -74.4625 Kcal/mol
+ BAR Iteration  26                       -79.7175 Kcal/mol
+ BAR Iteration  27                       -74.5125 Kcal/mol
+ BAR Iteration  28                       -79.6700 Kcal/mol
+ BAR Iteration  29                       -74.5587 Kcal/mol
+ BAR Iteration  30                       -79.6260 Kcal/mol
+ BAR Iteration  31                       -74.6016 Kcal/mol
+ BAR Iteration  32                       -79.5849 Kcal/mol
+ BAR Iteration  33                       -74.6416 Kcal/mol
+ BAR Iteration  34                       -79.5466 Kcal/mol
+ BAR Iteration  35                       -74.6791 Kcal/mol
+ BAR Iteration  36                       -79.5105 Kcal/mol
+ BAR Iteration  37                       -74.7144 Kcal/mol
+ BAR Iteration  38                       -79.4765 Kcal/mol
+ BAR Iteration  39                       -74.7477 Kcal/mol
+ BAR Iteration  40                       -79.4443 Kcal/mol
+ BAR Iteration  41                       -74.7793 Kcal/mol
+ BAR Iteration  42                       -79.4137 Kcal/mol
+ BAR Iteration  43                       -74.8093 Kcal/mol
+ BAR Iteration  44                       -79.3847 Kcal/mol
+ BAR Iteration  45                       -74.8378 Kcal/mol
+ BAR Iteration  46                       -79.3570 Kcal/mol
+ BAR Iteration  47                       -74.8651 Kcal/mol
+ BAR Iteration  48                       -79.3305 Kcal/mol
+ BAR Iteration  49                       -74.8911 Kcal/mol
+ BAR Iteration  50                       -79.3052 Kcal/mol
+ BAR Iteration  51                       -74.9161 Kcal/mol
+ BAR Iteration  52                       -79.2809 Kcal/mol
+ BAR Iteration  53                       -74.9400 Kcal/mol
+ BAR Iteration  54                       -79.2575 Kcal/mol
+ BAR Iteration  55                       -74.9631 Kcal/mol
+ BAR Iteration  56                       -79.2350 Kcal/mol
+ BAR Iteration  57                       -74.9853 Kcal/mol
+ BAR Iteration  58                       -79.2134 Kcal/mol
+ BAR Iteration  59                       -75.0066 Kcal/mol
+ BAR Iteration  60                       -79.1925 Kcal/mol
+ BAR Iteration  61                       -75.0273 Kcal/mol
+ BAR Iteration  62                       -79.1723 Kcal/mol
+ BAR Iteration  63                       -75.0472 Kcal/mol
+ BAR Iteration  64                       -79.1527 Kcal/mol
+ BAR Iteration  65                       -75.0665 Kcal/mol
+ BAR Iteration  66                       -79.1338 Kcal/mol
+ BAR Iteration  67                       -75.0852 Kcal/mol
+ BAR Iteration  68                       -79.1155 Kcal/mol
+ BAR Iteration  69                       -75.1033 Kcal/mol
+ BAR Iteration  70                       -79.0977 Kcal/mol
+ BAR Iteration  71                       -75.1209 Kcal/mol
+ BAR Iteration  72                       -79.0805 Kcal/mol
+ BAR Iteration  73                       -75.1380 Kcal/mol
+ BAR Iteration  74                       -79.0637 Kcal/mol
+ BAR Iteration  75                       -75.1546 Kcal/mol
+ BAR Iteration  76                       -79.0474 Kcal/mol
+ BAR Iteration  77                       -75.1707 Kcal/mol
+ BAR Iteration  78                       -79.0315 Kcal/mol
+ BAR Iteration  79                       -75.1864 Kcal/mol
+ BAR Iteration  80                       -79.0161 Kcal/mol
+ BAR Iteration  81                       -75.2017 Kcal/mol
+ BAR Iteration  82                       -79.0010 Kcal/mol
+ BAR Iteration  83                       -75.2167 Kcal/mol
+ BAR Iteration  84                       -78.9863 Kcal/mol
+ BAR Iteration  85                       -75.2312 Kcal/mol
+ BAR Iteration  86                       -78.9720 Kcal/mol
+ BAR Iteration  87                       -75.2454 Kcal/mol
+ BAR Iteration  88                       -78.9580 Kcal/mol
+ BAR Iteration  89                       -75.2593 Kcal/mol
+ BAR Iteration  90                       -78.9443 Kcal/mol
+ BAR Iteration  91                       -75.2729 Kcal/mol
+ BAR Iteration  92                       -78.9309 Kcal/mol
+ BAR Iteration  93                       -75.2861 Kcal/mol
+ BAR Iteration  94                       -78.9179 Kcal/mol
+ BAR Iteration  95                       -75.2991 Kcal/mol
+ BAR Iteration  96                       -78.9051 Kcal/mol
+ BAR Iteration  97                       -75.3118 Kcal/mol
+ BAR Iteration  98                       -78.8926 Kcal/mol
+ BAR Iteration  99                       -75.3242 Kcal/mol
+ BAR Iteration 100                       -78.8803 Kcal/mol
+
+ BAR Free Energy Estimate not Converged after 100 Iterations

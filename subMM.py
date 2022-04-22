@@ -23,8 +23,10 @@ def subParallelJobs(filelist):
 
 
 def getEnergy(filelist, savetxt):
+    print("Submitting analyze jobs...")
     subParallelJobs(filelist)
     # Check whether all analyze jobs finished!
+    print("Waiting for analyze jobs...")
     files = [line.split(".txyz")[0] for line in open(filelist).readlines()]
     nFile = len(files)
     readFlag = 0
