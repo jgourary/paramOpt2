@@ -26,3 +26,27 @@
        Completed     200 Coordinate Frames
        Completed     300 Coordinate Frames
        Completed     400 Coordinate Frames
+       Completed     500 Coordinate Frames
+       Completed     600 Coordinate Frames
+ Primary GPU package :  CUDA
+
+ Initial Processing for Trajectory B :
+
+ Primary GPU package :  CUDA
+       Completed     100 Coordinate Frames
+       Completed     200 Coordinate Frames
+       Completed     300 Coordinate Frames
+       Completed     400 Coordinate Frames
+       Completed     500 Coordinate Frames
+       Completed     600 Coordinate Frames
+
+ Free Energy Perturbation :          1.000 Lambda for Torsional Angles
+ Free Energy Perturbation :          1.000 Lambda for van der Waals
+ Free Energy Perturbation :          1.000 Lambda for Electrostatics
+
+ Free Energy Perturbation :          1.000 Lambda for Torsional Angles
+ Free Energy Perturbation :          1.000 Lambda for van der Waals
+ Free Energy Perturbation :          1.000 Lambda for Electrostatics
+ Primary GPU package :  CUDA
+
+ Potential Energy Values Written To :  liquid-e100-v100.bar

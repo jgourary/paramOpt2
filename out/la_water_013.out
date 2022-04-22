@@ -12,3 +12,14 @@
    ##########################################################################
      ######################################################################
 
+
+ Intermolecular Energy :             -74.72131784 Kcal/mole
+
+ Total Potential Energy :            -74.72212444 Kcal/mole
+
+ Energy Component Breakdown :           Kcal/mole        Interactions
+
+ Urey-Bradley                         -0.00080660                1
+ Van der Waals                         6.53868191                3
+ Atomic Multipoles                   -50.26205962                3
+ Polarization                        -30.99794013                3
