@@ -14,7 +14,7 @@ copy_arc_for_perturb: YES       # Only used if a "xxx.prm_" file exists. YES/Tru
 # Files you should provide 
 gas_xyz: la.xyz            # Ligand/small molecule tinker xyz file
 box_xyz: la_water50.xyz         # Simulation box tinker xyz file, with box information
-parameters: amoeba09_la.prm        # Tinker parameter file
+parameters: ../amoeba09.prm        # Tinker parameter file
 
 # Molecular dynamics simulation settings
 liquid_md_total_time: 1.25            # Simulation time for liquid (in ns)
