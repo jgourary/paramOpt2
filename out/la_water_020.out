@@ -13,6 +13,13 @@
      ######################################################################
 
 
- GETKEY  --  Keyfile Specified on Command Line was not Found
+ Intermolecular Energy :             -44.92142250 Kcal/mole
 
- Tinker is Unable to Continue; Terminating the Current Calculation
+ Total Potential Energy :            -44.92222909 Kcal/mole
+
+ Energy Component Breakdown :           Kcal/mole        Interactions
+
+ Urey-Bradley                         -0.00080660                1
+ Van der Waals                        -0.22304826                3
+ Atomic Multipoles                   -32.33500928                3
+ Polarization                        -12.36336495                3

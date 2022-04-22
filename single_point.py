@@ -8,11 +8,11 @@ import concurrent.futures
 def writeprm():
     types, params = np.loadtxt("parameter", dtype="str", unpack=True)
     prmdict = dict(zip(types, params))
-    lines = open("amoeba09_template_unused.prm").readlines()
+    lines = open("amoeba09_template.prm").readlines()
     with open("amoeba09.prm_", "w") as f:
         for line in lines:
             if "PRM_" in line:
-                for k, v in prmdict:
+                for k, v in prmdict.items():
                     search = "PRM_" + k + "_"
                     if search in line and (line[0:1] != "#"):
                         replaceStr = "%10.8f" % (float(v))

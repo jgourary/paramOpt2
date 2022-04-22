@@ -9,7 +9,7 @@ os.system("rm -rf ./out/*.out ")
 
 def subOneAnalyzeJob(filename):
     analyze_exe = "/home/jtg2769/lanthanides/Parametrization/analyze"
-    cmd_str = "%s ../txyz/%s.txyz -key tinker.key E> ./out/%s.out" % (analyze_exe, filename, filename)
+    cmd_str = "%s ./txyz/%s.txyz -key tinker.key E> ./out/%s.out" % (analyze_exe, filename, filename)
     subprocess.run(cmd_str, shell=True)
     return
 

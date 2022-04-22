@@ -13,7 +13,7 @@ def func(math_params):
 
     #  Cost from hydration free energy from BAR vs experimental HFE
     calc_hfes = np.array(getHFE())
-    hfeCost = hfes - calc_hfes
+    hfeCost = abs(hfes - calc_hfes)  # this may be wrong for multiple experiments
     print("hfe cost = " + str(hfeCost))
 
     #  Cost from QM vs MM interaction energy curves
