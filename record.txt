@@ -1,6 +1,84 @@
-Current params = 4.0912218, 0.94295564
-Hydration Free Energy Cost = [23.9161]
-Interaction Energy Cost = 78.69198358920112
-Total Cost (75% HFE, 25% IE) = [37.6100709]
+Current params = 3.9684663548, 0.9401513914
+Hydration Free Energy Cost = [0.0007]
+Interaction Energy Cost = 10.477752787118643
+Total Cost (75% HFE, 25% IE) = [2.6199632]
+
+
+Current params = 3.9684703232663545, 0.9401513914
+Hydration Free Energy Cost = [1.e-04]
+Interaction Energy Cost = 10.477523012617274
+Total Cost (75% HFE, 25% IE) = [2.61945575]
+
+
+Current params = 3.9684663548, 0.9401523914000001
+Hydration Free Energy Cost = [0.0007]
+Interaction Energy Cost = 10.477739698864996
+Total Cost (75% HFE, 25% IE) = [2.61995992]
+
+
+Current params = 3.988189437444118, 0.9403981208799985
+Hydration Free Energy Cost = [3.5264]
+Interaction Energy Cost = 9.344039330750483
+Total Cost (75% HFE, 25% IE) = [4.98080983]
+
+
+Current params = 3.9733971063355664, 0.9402138166983525
+Hydration Free Energy Cost = [0.8704]
+Interaction Energy Cost = 10.19208665280974
+Total Cost (75% HFE, 25% IE) = [3.20082166]
+
+
+Current params = 3.9696990465133193, 0.940166849148498
+Hydration Free Energy Cost = [0.2163]
+Interaction Energy Cost = 10.406235186929553
+Total Cost (75% HFE, 25% IE) = [2.7637838]
+
+
+Current params = 3.9687745279097006, 0.9401552487599002
+Hydration Free Energy Cost = [0.0534]
+Interaction Energy Cost = 10.459867273107118
+Total Cost (75% HFE, 25% IE) = [2.65501682]
+
+
+Current params = 3.9685433980880824, 0.9401523553236425
+Hydration Free Energy Cost = [0.0127]
+Interaction Energy Cost = 10.473280693321437
+Total Cost (75% HFE, 25% IE) = [2.62784517]
+
+
+Current params = 3.9684856156226767, 0.940151632355271
+Hydration Free Energy Cost = [0.0026]
+Interaction Energy Cost = 10.476634340194163
+Total Cost (75% HFE, 25% IE) = [2.62110859]
+
+
+Current params = 3.96847117000571, 0.9401514516372211
+Hydration Free Energy Cost = [1.e-04]
+Interaction Energy Cost = 10.477473029166186
+Total Cost (75% HFE, 25% IE) = [2.61944326]
+
+
+Current params = 3.96847513847688, 0.9401514516372211
+Hydration Free Energy Cost = [0.0007]
+Interaction Energy Cost = 10.477243254158749
+Total Cost (75% HFE, 25% IE) = [2.61983581]
+
+
+Current params = 3.96847117000571, 0.9401524516372212
+Hydration Free Energy Cost = [1.e-04]
+Interaction Energy Cost = 10.477459940521365
+Total Cost (75% HFE, 25% IE) = [2.61943999]
+
+
+Current params = 3.9684621302095837, 0.9401516175042992
+Hydration Free Energy Cost = [0.0015]
+Interaction Energy Cost = 10.477994024045715
+Total Cost (75% HFE, 25% IE) = [2.62062351]
+
+
+Current params = 3.968468910056659, 0.9401514931034105
+Hydration Free Energy Cost = [0.0003]
+Interaction Energy Cost = 10.477603310316004
+Total Cost (75% HFE, 25% IE) = [2.61962583]
 
 

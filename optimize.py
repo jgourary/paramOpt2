@@ -23,7 +23,8 @@ def func(math_params):
     IEcost = 0
     i = 0
     while i < len(QM):
-        IEcost += ((QM[i] - MM[i]) ** 2)
+        if QM[i] < 0:
+            IEcost += ((QM[i] - MM[i]) ** 2)
         i += 1
     IEcost = math.sqrt(IEcost / len(MM))
 
