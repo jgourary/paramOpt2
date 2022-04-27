@@ -25,7 +25,7 @@ def submit(dirname):
     os.system(f"cp amoeba09.prm_ {dirname}")
     homedir = "/home/jtg2769/software/paramOpt2"
     os.chdir(os.path.join(homedir, dirname))
-    subcmd = "python /home/jtg2769/lanthanides/autoBAR/autoBAR.py auto"
+    subcmd = "python /home/jtg2769/software/autoBAR/autoBAR.py auto"
     subprocess.run(subcmd, shell=True)
     return
 
